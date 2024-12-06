@@ -1,6 +1,8 @@
 const { readFileSync, writeFileSync, mkdirSync } = require("fs");
 const { join } = require("path");
 
+const UglifyJS = require("uglify-js");
+
 
 const OUT_DIR = join(__dirname, "./js");
 const OUT_FILE = join("breathe.js");
@@ -16,14 +18,16 @@ function build() {
         recursive: true
     })
     writeFileSync(join(OUT_DIR, OUT_FILE),
-        readSourceFile("script.js")
-            .replace(/@CSS/i, [
-                readSourceFile("base.css"),
-                readSourceFile("patterns.css")
-            ]
-                .join("\n")
-                .replace(/[\n\r]|\s{2,}/g, "")
-        )
+        UglifyJS.minify(
+            readSourceFile("script.js")
+                .replace(/@CSS/i, [
+                    readSourceFile("base.css"),
+                    readSourceFile("patterns.css")
+                ]
+                    .join("\n")
+                    .replace(/[\n\r]|\s{2,}/g, "")
+            )
+        ).code
     );
     
     console.log(`\x1b[34mSuccessfully built ${join(OUT_DIR, OUT_FILE)}.\x1b[0m`);

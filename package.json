@@ -4,10 +4,15 @@
   "author": "Thassilo Martin Schiepanski",
   "description": "Attribute-based HTML element animations.",
   "keywords": [
-    "html", "animation", "transition"
+    "html",
+    "animation",
+    "transition"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "uglify-js": "^3.19.3"
+  }
 }
