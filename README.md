@@ -6,7 +6,7 @@ Let any site breathe through attribute-based element animations.
 
 ``` html
 <head>
-  <script src="https://cdn.jsdelivr.net/gh/flecss/breathe@main/js/breathe.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/flecss/breathe@main/dist/breathe.js"></script>
 <head>
 ```
 

@@ -4,7 +4,7 @@ const { join } = require("path");
 const UglifyJS = require("uglify-js");
 
 
-const OUT_DIR = join(__dirname, "./js");
+const OUT_DIR = join(__dirname, "./dist");
 const OUT_FILE = join("breathe.js");
 
 
