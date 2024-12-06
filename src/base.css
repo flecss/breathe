@@ -1,0 +1,19 @@
+:root {
+    --breathe__magnitude: 20%;
+}
+
+
+body *[data-breathe],
+body[data-breathe-speed="normal"] *[data-breathe] {
+    --breathe__speed: 800ms;
+}
+body[data-breathe-speed="fast"] *[data-breathe] {
+    --breathe__speed: 400ms;
+}
+body[data-breathe-speed="slow"] *[data-breathe] {
+    --breathe__speed: 1200ms;
+}
+
+*[data-breathe] {
+    transition: transform var(--breathe__speed), filter var(--breathe__speed);
+}

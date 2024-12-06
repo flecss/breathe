@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Test | breathe</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flecss/css/flecss.css">
+        <style>
+            :root {
+                --bg: #FFFFFF;
+                --bg-contrast: #F4F4FA;
+                --fg: #131317;
+            }
+            html {
+                background-color: var(--bg);
+                color: var(--fg);
+            }
+            header, footer {
+                background-color: var(--bg-contrast);
+            }
+            .section--highlight {
+                background-color: var(--bg-contrast);
+            }
+            .card {
+                padding: 1.5rem 1.75rem;
+                border: 1px solid gainsboro;
+                border-radius: 0.5rem;
+            }
+        </style>
+        <script src="./js/breathe.js"></script>
+    </head>
+    <body data-breathe-speed="normal">
+        <header class="section">
+            <div class="wrapper--m">
+                <strong class="text--xxl">TEST</strong>
+            </div>
+        </header>
+        <main>
+            <section class="section">
+                <div class="wrapper">
+                    <h1>Test</h1>
+                    <p class="text--l" data-breathe="fade">
+                        breathe makes your site breathe.
+                    </p>
+                </div>
+            </section>
+            <section class="section">
+                <div class="wrapper">
+                    <h2>Lorem Ipsum</h2>
+                    <div class="flex_3--l">
+                        <p class="card" data-breathe="rise">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                        </p>
+                        <p class="card" data-breathe="flip-v">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                        </p>
+                        <p class="card" data-breathe="flip-h">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="section section--highlight">
+                <div class="wrapper--l">
+                    <h2>Lorem Ipsum</h2>
+                    <p class="card" data-breathe="bounce">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+            </section>
+            <section class="section">
+                <div class="wrapper">
+                    <h2>Lorem Ipsum</h2>
+                    <p class="card" data-breathe="pulse">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+            </section>
+        </main>
+        <footer class="section">
+            <div class="wrapper--xs">
+                Lorem ipsum dolor sit amet...
+            </div>
+        </footer>
+    </body>
+</html>

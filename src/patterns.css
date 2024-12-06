@@ -1,0 +1,33 @@
+*[data-breathe="fade"] {
+    filter: opacity(0.0);
+}
+
+*[data-breathe="rise"] {
+    transform: translateY(var(--breathe__magnitude));
+    filter: opacity(0.0);
+}
+
+*[data-breathe="flip-v"] {
+    visibility: hidden;
+    transform: rotateX(-90deg);
+}
+*[data-breathe="flip-h"] {
+    visibility: hidden;
+    transform: rotateY(-90deg);
+}
+
+*[data-breathe="bounce:a"] {
+    transition-timing-function: cubic-bezier(0.125, 0.125, 0.5, 1.75);
+}
+*[data-breathe="bounce"] {
+    transform: translateY(var(--breathe__magnitude));
+    filter: opacity(0.0);
+}
+
+*[data-breathe="pulse:a"] {
+    transition-timing-function: cubic-bezier(0.125, 0.125, 0.5, 1.75);
+}
+*[data-breathe="pulse"] {
+    transform: scale(calc(100% - var(--breathe__magnitude)));
+    filter: opacity(0.0);
+}
