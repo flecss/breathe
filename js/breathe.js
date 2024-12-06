@@ -1,7 +1,7 @@
 (() => {
     document.addEventListener("DOMContentLoaded", () => {
         const styleEl = document.createElement("style");
-        styleEl.textContent = `@CSS`;
+        styleEl.textContent = `:root {--breathe__magnitude: 20%;}body *[data-breathe],body[data-breathe-speed="normal"] *[data-breathe] {--breathe__speed: 800ms;}body[data-breathe-speed="fast"] *[data-breathe] {--breathe__speed: 400ms;}body[data-breathe-speed="slow"] *[data-breathe] {--breathe__speed: 1200ms;}*[data-breathe] {transition: transform var(--breathe__speed), filter var(--breathe__speed);}*[data-breathe="fade"] {filter: opacity(0.0);}*[data-breathe="rise"] {transform: translateY(var(--breathe__magnitude));filter: opacity(0.0);}*[data-breathe="flip-v"] {visibility: hidden;transform: rotateX(-90deg);}*[data-breathe="flip-h"] {visibility: hidden;transform: rotateY(-90deg);}*[data-breathe="bounce:a"] {transition-timing-function: cubic-bezier(0.125, 0.125, 0.5, 1.75);}*[data-breathe="bounce"] {transform: translateY(var(--breathe__magnitude));filter: opacity(0.0);}*[data-breathe="pulse:a"] {transition-timing-function: cubic-bezier(0.125, 0.125, 0.5, 1.75);}*[data-breathe="pulse"] {transform: scale(calc(100% - var(--breathe__magnitude)));filter: opacity(0.0);}`;
         document.head
             .appendChild(styleEl);
     });
@@ -15,7 +15,7 @@
         },
         transitionDelayMs: 400
     };
-    
+
     function breathe() {
         Array.from(
             document.querySelectorAll(`[${_config.attrs.bind}]`)

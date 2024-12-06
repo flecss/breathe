@@ -25,7 +25,7 @@ function build() {
                 .replace(/[\n\r]|\s{2,}/g, "")
         )
     );
-
+    
     console.log(`\x1b[34mSuccessfully built ${join(OUT_DIR, OUT_FILE)}.\x1b[0m`);
 }
 

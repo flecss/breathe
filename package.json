@@ -1,0 +1,13 @@
+{
+  "name": "@flecss/breathe",
+  "version": "0.1.0",
+  "author": "Thassilo Martin Schiepanski",
+  "description": "Attribute-based HTML element animations.",
+  "keywords": [
+    "html", "animation", "transition"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT"
+}
